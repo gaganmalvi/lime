@@ -26,6 +26,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/lime
 
+# Platform
+TARGET_BOARD_PLATFORM := bengal
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS += \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    media \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    vibrator \
+    wfd \
+    wlan
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
