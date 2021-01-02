@@ -26,6 +26,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/lime
 
+# Overlays
+PRODUCT_PACKAGES += \
+    RedmiFrameworks \
+    RedmiSystemUI
+
 # Platform
 TARGET_BOARD_PLATFORM := bengal
 
